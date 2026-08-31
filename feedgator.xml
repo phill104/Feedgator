@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>FeedGator</name>
+	<creationDate>Aug 2010</creationDate>
+	<author>Matt Faulds</author>
+	<authorEmail>mattfaulds@gmail.com</authorEmail>
+	<copyright>Copyright 2005-2010 Stephen Simmons, Jozef Kapusciarz &amp; Matt Faulds. All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!-- NOTE: bump this on every release. Ported to Joomla 6, PHP 8.1+ -->
+	<version>4.0.0</version>
+	<description>FG_DESCRIPTION</description>
+	<namespace path="src">Trafalgardesign\Component\Feedgator</namespace>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8mb4">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8mb4">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="site">
+		<folder>services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<media destination="feedgator" folder="media/feedgator">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>videos</folder>
+		<folder>audio</folder>
+		<folder>attachments</folder>
+	</media>
+
+	<administration>
+		<menu img="class:feedgator">FG_FEED_GATOR</menu>
+		<submenu>
+			<menu task="cpanel">FG_CPANEL</menu>
+			<menu task="feeds">FG_MAN_FEEDS</menu>
+			<menu task="settings">FG_SETTINGS</menu>
+			<menu task="plugins">FG_PLUGINS</menu>
+			<menu task="tools">FG_TOOLS</menu>
+			<menu task="imports">FG_IMPORTS</menu>
+			<menu task="support">FG_SUPPORT</menu>
+			<menu task="about">FG_ABOUT</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>services</folder>
+			<folder>src</folder>
+			<folder>forms</folder>
+			<folder>fields</folder>
+			<folder>tmpl</folder>
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>inc</folder>
+			<folder>plugins</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_feedgator.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_feedgator.menu.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_feedgator.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
