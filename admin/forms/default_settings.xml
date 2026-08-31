@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="advanced" addfieldpath="/administrator/components/com_feedgator/fields">
+		<field name="base" type="fgbase" default=""  size="50" label="FG_BASE" description="FG_BASE_DESC" />
+		<field name="scrape_type" type="radio" default="cURL" label="FG_SCRAPE_TYPE" description="FG_SCRAPE_TYPE_DESC">
+			<option value="cURL">cURL</option>
+			<option value="fopen">fopen</option>
+		</field>
+		<field name="force_fsockopen" type="radio" default="0" label="FG_FORCE_FSOCK" description="FG_FORCE_FSOCK_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="img_check" type="radio" default="1" label="FG_IMAGE_CHECK" description="FG_IMAGE_CHECK_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="blocked_images" type="text" default="" label="FG_BLOCK_IMAGES" description="FG_BLOCK_IMAGES_DESC"/>
+		<field name="set_sp_timeout" type="text" default="" label="FG_FETCH_TIMEOUT" description="FG_FETCH_TIMEOUT_DESC" />
+		<field name="debug" type="radio" default="0" label="FG_DEBUG" description="FG_DEBUG_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="notify_dev" type="radio" default="0" label="FG_NOTIFY_DEV" description="FG_NOTIFY_DEV_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	</fieldset>
+	<fieldset name="hidden">
+		<field name="id" type="text" default="" size="50" label="" description="" />
+	</fieldset>
+</form>

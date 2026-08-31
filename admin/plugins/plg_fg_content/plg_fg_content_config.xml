@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fgplugindef group="feedgator">
+	<name>Joomla Native Content Plugin</name>
+	<author>Matt Faulds</author>
+	<copyright>Copyright 2010 Trafalgar Design</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@trafalgardesign.com</authorEmail>
+	<authorUrl>http://www.trafalgardesign.com</authorUrl>
+	<version>4.0.0</version>
+	<description>Driver to allow importing feed content into native Joomla articles (com_content).</description>
+	<params>
+		<param type="spacer" default="FG_PLG_NO_PARAMS" />
+	</params>
+</fgplugindef>
