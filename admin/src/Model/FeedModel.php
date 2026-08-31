@@ -198,7 +198,7 @@ class FeedModel extends BaseDatabaseModel
             $fgParams->setValue(
                 'img_savepath',
                 null,
-                \JPATH_ROOT . '/' . \Joomla\CMS\Filesystem\Folder::makeSafe(str_replace('/', '//', $fgParams->getValue('img_folder')))
+                \JPATH_ROOT . '/' . \Joomla\Filesystem\Folder::makeSafe(str_replace('/', '//', $fgParams->getValue('img_folder')))
             );
             $fgParams->setValue(
                 'srcpath',
@@ -208,7 +208,7 @@ class FeedModel extends BaseDatabaseModel
             $fgParams->setValue(
                 'savepath',
                 null,
-                \JPATH_ROOT . '/' . \Joomla\CMS\Filesystem\Folder::makeSafe(str_replace('/', '//', $fgParams->getValue('media_folder', null, 'media/feedgator/')))
+                \JPATH_ROOT . '/' . \Joomla\Filesystem\Folder::makeSafe(str_replace('/', '//', $fgParams->getValue('media_folder', null, 'media/feedgator/')))
             );
         }
     }

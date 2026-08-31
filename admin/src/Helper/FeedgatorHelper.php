@@ -39,8 +39,8 @@
 namespace Trafalgardesign\Component\Feedgator\Administrator\Helper;
 
 use Joomla\CMS\Factory;
-use Joomla\CMS\Filesystem\File;
-use Joomla\CMS\Filesystem\Folder;
+use Joomla\Filesystem\File;
+use Joomla\Filesystem\Folder;
 use Joomla\CMS\Filter\OutputFilter;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Plugin\PluginHelper;
